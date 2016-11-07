@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class Sample {
     public static void main(String[] args) {
         //System.out.println('a' >> 1);
-        ConcurrentHashMap<String,String> cm = new ConcurrentHashMap<>();
+       /* ConcurrentHashMap<String,String> cm = new ConcurrentHashMap<>();
         cm.put("abc","a");
         cm.put("def","d");
         cm.put("ghi","g");
@@ -18,6 +18,10 @@ public class Sample {
         System.out.println(cm1);
 
         AtomicInteger ai= new AtomicInteger(10);
-        System.out.println(ai.incrementAndGet());
+        System.out.println(ai.incrementAndGet());*/
+       StringBuilder builder = new StringBuilder("World");
+       builder.insert(2,"Hello");
+        System.out.println("String val > "+builder.toString());
+
     }
 }
